@@ -15,13 +15,14 @@ def display(df: pd.DataFrame) -> None:
 
 
 def get_credentials(site: str) -> dict:
-    with open(r"C:\Users\karme\Sentiment_Analysis\credentials.yaml",'r') as f:
+    with open("credentials.yaml",'r') as f:
         credentials = yaml.load(f,Loader=yaml.FullLoader)
         cred = credentials[site]
+        print(cred)
         return cred 
 
 
 if __name__ == '__main__':
-    df = pd.read_csv(r"C:\Users\karme\Sentiment_Analysis\data\test\BBCA.JK new.csv")
+    df = pd.read_csv("..\data\BBCA.JK new.csv")
     display(df)
     
