@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # Commande à exécuter lorsque le conteneur démarre
-CMD ["streamlit", "run", "src/main.py"]
+CMD ["python","-m","streamlit", "run", "src/main.py"]

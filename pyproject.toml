@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "Sentiment_Analysis"
+version = "0.1.0"
+description = ""
+authors = ["Mehdi-Ulb <83882339+Mehdi-Ulb@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.30.0"
+pandas = "^2.2.0"
+pytest = "^8.0.0"
+skfolio = "^0.1.1"
+scikit-learn = "^1.4.0"
+numpy = "^1.26.3"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.2"
+plotly = "^5.18.0"
+scipy = "^1.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
